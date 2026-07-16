@@ -12,5 +12,5 @@ import java.util.UUID;
 public interface ClassroomRepository extends JpaRepository<Classroom, UUID> {
 
     List<Classroom> findByNameContaining(String name);
-    Page<Classroom> findByNameContainingPage(String name, Pageable pageable);
+    Page<Classroom> findByNameContaining(String name, Pageable pageable);
 }

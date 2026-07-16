@@ -24,7 +24,7 @@ public class StudentService {
     }
 
     public Page<Student> getStudentList(String name, Pageable page){
-        return studentRepository.findByNameContainingPage(name,page);
+        return studentRepository.findByNameContaining(name,page);
     }
 
 

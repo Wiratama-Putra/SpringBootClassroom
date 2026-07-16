@@ -26,7 +26,7 @@ public class ClassroomService {
     }
 
     public Page<Classroom> getClassroomList(String name, Pageable page){
-        return classroomRepository.findByNameContainingPage(name,page);
+        return classroomRepository.findByNameContaining(name,page);
     }
 
 }
